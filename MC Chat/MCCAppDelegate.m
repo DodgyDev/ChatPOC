@@ -7,6 +7,8 @@
 //
 
 #import "MCCAppDelegate.h"
+#import "MCCMainViewController.h"
+#import "MCCSettingsViewController.h"
 
 @implementation MCCAppDelegate
 
@@ -16,6 +18,16 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    if([[NSUserDefaults standardUserDefaults] objectForKey:@"PeerID"]){
+        MCCMainViewController *mainVC = [[MCCMainViewController alloc] init];
+        self.window.rootViewController = mainVC;
+    }else{
+        MCCSettingsViewController *settingsVC = [[MCCSettingsViewController alloc] init];
+        self.window.rootViewController = settingsVC;
+    }
+    
+    
     return YES;
 }
 

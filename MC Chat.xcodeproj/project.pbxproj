@@ -19,6 +19,11 @@
 		A01EA56718F1090000774D1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EA54F18F1090000774D1F /* UIKit.framework */; };
 		A01EA56F18F1090000774D1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01EA56D18F1090000774D1F /* InfoPlist.strings */; };
 		A01EA57118F1090000774D1F /* MC_ChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EA57018F1090000774D1F /* MC_ChatTests.m */; };
+		A05C6DE718F133420000ED99 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05C6DE618F133420000ED99 /* MultipeerConnectivity.framework */; };
+		A05C6DEB18F133C00000ED99 /* MCCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05C6DE918F133C00000ED99 /* MCCMainViewController.m */; };
+		A05C6DEC18F133C00000ED99 /* MCCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05C6DEA18F133C00000ED99 /* MCCMainViewController.xib */; };
+		A05C6DF018F206910000ED99 /* MCCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05C6DEE18F206910000ED99 /* MCCSettingsViewController.m */; };
+		A05C6DF118F206910000ED99 /* MCCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05C6DEF18F206910000ED99 /* MCCSettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		A01EA56C18F1090000774D1F /* MC ChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MC ChatTests-Info.plist"; sourceTree = "<group>"; };
 		A01EA56E18F1090000774D1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A01EA57018F1090000774D1F /* MC_ChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MC_ChatTests.m; sourceTree = "<group>"; };
+		A05C6DE618F133420000ED99 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		A05C6DE818F133C00000ED99 /* MCCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCMainViewController.h; sourceTree = "<group>"; };
+		A05C6DE918F133C00000ED99 /* MCCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCMainViewController.m; sourceTree = "<group>"; };
+		A05C6DEA18F133C00000ED99 /* MCCMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCCMainViewController.xib; sourceTree = "<group>"; };
+		A05C6DED18F206910000ED99 /* MCCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCSettingsViewController.h; sourceTree = "<group>"; };
+		A05C6DEE18F206910000ED99 /* MCCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCSettingsViewController.m; sourceTree = "<group>"; };
+		A05C6DEF18F206910000ED99 /* MCCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCCSettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05C6DE718F133420000ED99 /* MultipeerConnectivity.framework in Frameworks */,
 				A01EA54E18F1090000774D1F /* CoreGraphics.framework in Frameworks */,
 				A01EA55018F1090000774D1F /* UIKit.framework in Frameworks */,
 				A01EA54C18F1090000774D1F /* Foundation.framework in Frameworks */,
@@ -77,6 +90,12 @@
 		A01EA53F18F1090000774D1F = {
 			isa = PBXGroup;
 			children = (
+				A05C6DED18F206910000ED99 /* MCCSettingsViewController.h */,
+				A05C6DEE18F206910000ED99 /* MCCSettingsViewController.m */,
+				A05C6DEF18F206910000ED99 /* MCCSettingsViewController.xib */,
+				A05C6DE818F133C00000ED99 /* MCCMainViewController.h */,
+				A05C6DE918F133C00000ED99 /* MCCMainViewController.m */,
+				A05C6DEA18F133C00000ED99 /* MCCMainViewController.xib */,
 				A01EA55118F1090000774D1F /* MC Chat */,
 				A01EA56A18F1090000774D1F /* MC ChatTests */,
 				A01EA54A18F1090000774D1F /* Frameworks */,
@@ -96,6 +115,7 @@
 		A01EA54A18F1090000774D1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A05C6DE618F133420000ED99 /* MultipeerConnectivity.framework */,
 				A01EA54B18F1090000774D1F /* Foundation.framework */,
 				A01EA54D18F1090000774D1F /* CoreGraphics.framework */,
 				A01EA54F18F1090000774D1F /* UIKit.framework */,
@@ -192,6 +212,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = GTLucas;
 				TargetAttributes = {
+					A01EA54718F1090000774D1F = {
+						DevelopmentTeam = 9R9TQ8V583;
+					};
 					A01EA56218F1090000774D1F = {
 						TestTargetID = A01EA54718F1090000774D1F;
 					};
@@ -221,7 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01EA55618F1090000774D1F /* InfoPlist.strings in Resources */,
+				A05C6DF118F206910000ED99 /* MCCSettingsViewController.xib in Resources */,
 				A01EA55E18F1090000774D1F /* Images.xcassets in Resources */,
+				A05C6DEC18F133C00000ED99 /* MCCMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01EA55C18F1090000774D1F /* MCCAppDelegate.m in Sources */,
+				A05C6DF018F206910000ED99 /* MCCSettingsViewController.m in Sources */,
+				A05C6DEB18F133C00000ED99 /* MCCMainViewController.m in Sources */,
 				A01EA55818F1090000774D1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MC Chat/MC Chat-Prefix.pch";
 				INFOPLIST_FILE = "MC Chat/MC Chat-Info.plist";
@@ -375,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MC Chat/MC Chat-Prefix.pch";
 				INFOPLIST_FILE = "MC Chat/MC Chat-Info.plist";
@@ -444,6 +473,7 @@
 				A01EA57618F1090000774D1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A01EA57718F1090000774D1F /* Build configuration list for PBXNativeTarget "MC ChatTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +482,7 @@
 				A01EA57918F1090000774D1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
